@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Javascript</title>
+	<link rel="stylesheet" type="text/css" href="http://localhost/JavascriptAssignment/assignment-1/assets/css/Theme.css"/>
+	<link rel="stylesheet" type="text/css" href="http://localhost/JavascriptAssignment/assignment-1/assets/css/main.css"/>
+</head>
+<body>
+	<header class="main-header hidden-print">
+		<p class="logo">Javascript</p>
+		<nav class="navbar navbar-static-top">
+			<a class="sidebar-toggle" href="#" data-toggle="offcanvas"></a>
+		</nav>	
+	</header>
+	<div class="content" style="padding: 8px;">
+		<div class="row">
+			<div class="col-sm-12 col-md-12 col-lg-12">
+				<form method="post" action="#" name="form">
+					
+					<h1>Resize Event</h1>
+					<div class="text-style" id="w-height">Window's Height:</div>
+					<div class="text-style" id="w-width">Window's width:</div>
+
+				</form>
+			</div>
+		</div>
+	</div>				
+					
+	<script type="text/javascript" src="http://localhost/JavascriptAssignment/assignment-1/assets/js/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(window).resize(function (e){
+				e.preventDefault();
+				var h = $(window).height();
+				var w = $(window).width();
+				$("#w-height").text("window's height:"+h);
+				$("#w-width").text("window's width:"+w);
+
+			});
+		});
+	</script>
+	
+</body>
+</html>						
+	
