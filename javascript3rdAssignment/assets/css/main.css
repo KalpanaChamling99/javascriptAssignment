@@ -1,0 +1,11 @@
+#main-content{
+	display:none;
+}
+.panel-body{
+	letter-spacing:0.5pt;
+	line-height: 150%;
+	word-spacing: 5px;
+}
+.toggle-content{
+	cursor: pointer;
+}

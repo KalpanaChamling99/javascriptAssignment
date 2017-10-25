@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Javascript</title>
+	<link rel="stylesheet" type="text/css" href="http://localhost/Javascript1stAssignment/assets/css/Theme.css"/>
+	<link rel="stylesheet" type="text/css" href="http://localhost/Javascript1stAssignment/assets/css/main.css"/>
+
+</head>
+<body>
+	<header class="main-header hidden-print">
+		<p class="logo">Javascript</p>
+		<nav class="navbar navbar-static-top">
+			<a class="sidebar-toggle" href="#" data-toggle="offcanvas"></a>
+		</nav>	
+	</header>
+	<div class="content" style="padding: 8px;">
+		<div class="row">
+			<div class="col-sm-12 col-md-12 col-lg-12">
+				<form method="post" action="#" name="form">
+					<h1>Mouse Event</h1>
+					<div class="field" id="mouseaction"></div>
+					<div class="text-style">cursor position</div>
+					<div id="position"></div>
+
+					
+					
+				</form>
+			</div>
+		</div>
+	</div>				
+					
+	<script type="text/javascript" src="http://localhost/Javascript1stAssignment/assets/js/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#mouseaction").mouseover(function(e){
+				$(this).text("welcome");
+			});
+			$("#mouseaction").mouseout(function(e){
+				$(this).text("Good Bye");
+			});
+			$("body").mousemove(function(e){
+				$("#position").html("Horizontal:"+e.screenX+"<br/>Vertical: "+e.screenY);
+			})
+		});
+	</script>
+	
+
+</body>
+</html>						
+	

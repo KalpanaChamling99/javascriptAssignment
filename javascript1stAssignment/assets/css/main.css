@@ -1,0 +1,25 @@
+ 	.field{
+	border-style:groove;
+	width: 200px;
+	height: 50px;
+
+}
+.text-style{
+	font-size:15pt;
+	font-weight:bold;
+
+}
+.scroll-content{
+	border-style: groove;
+	height:450px;
+	overflow:auto;
+}
+.scroll-content-msg{
+	border-style: groove;
+	margin-top:10px;
+	top:580px;
+	position: fixed;
+	height:40px;
+	width: 400px;
+
+}
