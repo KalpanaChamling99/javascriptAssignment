@@ -2,6 +2,7 @@ body{
 	margin: 0;
 	height: 100%
 	width:100%;
+	
 }
 nav{
 	border-style: solid;
@@ -12,6 +13,7 @@ nav{
 	margin-left: 1%;
 	position: sticky;
 	top:0;
+
 }
 
 
@@ -32,6 +34,7 @@ li{
 .content{
 	margin-left: 1%;
 	margin-top:1%;
+	
 }
 p{
 	letter-spacing: 0.5pt;
